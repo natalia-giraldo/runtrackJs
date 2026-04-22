@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Job 02</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        .container { display: flex; gap: 2px; min-height: 150px; border: 1px solid #ccc; margin-top: 10px; padding: 5px; }
+        .arc-img { cursor: pointer; }
+    </style>
+</head>
+<body>
+    <button id="shuffleBtn">Mélanger les images</button>
+    
+    <h3>Images mélangées (Cliquez pour les déplacer) :</h3>
+    <div id="mixedContainer" class="container"></div>
+
+    <h3>Reconstituez l'arc-en-ciel ici :</h3>
+    <div id="resultContainer" class="container"></div>
+
+    <h2 id="message"></h2>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Job 03 - Taquin</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        #taquin {
+            display: grid;
+            grid-template-columns: repeat(3, 100px); /* 3 colonnes de 100px */
+            grid-gap: 2px;
+            width: fit-content;
+            margin-bottom: 20px;
+        }
+        .tile {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            background-color: #eee;
+        }
+        .empty {
+            background-color: white; /* Case vide invisible */
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <div id="taquin"></div>
+    <h2 id="message"></h2>
+    <button id="restartBtn" style="display: none;">Recommencer</button>
+</body>
+</html>
